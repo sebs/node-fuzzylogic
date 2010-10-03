@@ -1,6 +1,6 @@
 {
   "name" : "fuzzylogic",
-  "version" : "0.0.1",
+  "version" : "0.0.2",
   "author" : "Sebastian Schürmann <sschuermann303@yahoo.de>",
   "description" : "A fuzzy logic module for node.js",
   "keywords" : ["fuzzylogic"],
