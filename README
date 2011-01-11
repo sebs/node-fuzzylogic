@@ -1,8 +1,11 @@
+
+_  _ ____ ___  ____    ____ _  _ ___  ___  _   _ _    ____ ____ _ ____ 
+|\ | |  | |  \ |___ __ |___ |  |   /    /   \_/  |    |  | | __ | |    
+| \| |__| |__/ |___    |    |__|  /__  /__   |   |___ |__| |__] | |___ 
+
 Fuzzy Logic for node.js
 
-Installation 
-npm install fuzzylogic
+If yes or no is not enough
 
-
-
-See: http://github.com/sebs/node-fuzzylogic
+Code by: Sebastian Schürmann 
+License: MIT
