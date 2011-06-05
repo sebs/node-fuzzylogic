@@ -1,11 +1,10 @@
 {
   "name" : "fuzzylogic",
-  "version" : "0.0.3",
-  "author" : "Sebastian Schürmann <sschuermann303@yahoo.de>",
+  "version" : "0.0.4",
+  "author" : "Sebastian Schürmann <sebs@solution.io>",
   "description" : "A fuzzy logic module for node.js",
   "keywords" : ["fuzzylogic"],
   "engines" : ["node"],
   "directories" : { "lib" : "lib" },
   "main" : "lib"
 }
-

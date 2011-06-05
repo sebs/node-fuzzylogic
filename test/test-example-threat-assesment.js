@@ -15,7 +15,6 @@ var threatCalc = function(threat) {
     sys.log('enraged attack: '  + probabEnragedAttack);    
 };
 
-
 threatCalc(10);
 threatCalc(20);
 threatCalc(30);
