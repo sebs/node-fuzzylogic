@@ -15,6 +15,25 @@ Fuzzy logic is a form of many-valued logic; it deals with reasoning that is appr
 from http://en.wikipedia.org/wiki/Fuzzy_logic
 
 
+Basic Fuzzyfication 
+
+    var resGrade = fuzzylogic.grade(3,0,1);
+    assert.ok(resGrade == 1);
+
+    var resReverseGrade = fuzzylogic.reverseGrade(3,0,1);
+    assert.ok(resReverseGrade === 0);
+
+    var resTriangle = fuzzylogic.triangle(3,0,1,2);
+    assert.ok(resTriangle === 0);
+
+Fuzzy Rulesets for Defuzzyfication 
+
+    assert.ok(rules.and(0.1, 0.2, cbA, cbB) == 0.1);
+    assert.ok(cbValue == 'a');
+    assert.ok(rules.or(0.1, 0.2, cbA, cbB)== 0.2);
+    assert.ok(cbValue == 'b');
+    assert.ok(rules.not(0.1) == 0.9);
+
 
 Threat Example 
 A Basic Function to create fuzzy decisions to 
