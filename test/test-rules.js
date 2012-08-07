@@ -1,17 +1,23 @@
-require('./common');
-assert.ok(typeof rules != 'undefined');
-
-var cbValue = 'none';
-var cbA = function() {
-    cbValue = 'a';
-};
-
-var cbB = function() {
-    cbValue = 'b';
-};
-
-assert.ok(rules.and(0.1, 0.2, cbA, cbB) == 0.1);
-assert.ok(cbValue == 'a');
-assert.ok(rules.or(0.1, 0.2, cbA, cbB)== 0.2);
-assert.ok(cbValue == 'b');
-assert.ok(rules.not(0.1) == 0.9);
+var assert = require("assert");
+var rules = require("../lib/rules");
+describe('Rules', function () {
+  it('should execute the right callback for and', function (done) {
+    var res = rules.and(0.1, 0.2, function () {
+      done();
+    }, function () {
+      assert.ok(false);
+    });
+    assert.equal(res, 0.1);
+  });
+  it('should execute the right callback for or', function (done) {
+    var res = rules.or(0.1, 0.2, function () {
+      assert.ok(false);
+    }, function () {
+      done();
+    });
+    assert.equal(res, 0.2);
+  });
+  it('should return the right value on not', function() {
+    assert.equal(rules.not(0.1), 0.9);
+  });
+});
