@@ -18,7 +18,7 @@ from http://en.wikipedia.org/wiki/Fuzzy_logic
 
 ```
 npm install fuzzylogic
-``
+```
 
 ## Basic Fuzzyfication`
 
