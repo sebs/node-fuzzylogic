@@ -18,7 +18,7 @@ from http://en.wikipedia.org/wiki/Fuzzy_logic
 
 ```
 npm install fuzzylogic
-```
+``
 
 ## Basic Fuzzyfication
 ```
@@ -54,7 +54,7 @@ A Basic Function to create fuzzy decisions to
     };
 ```
 And then execute the code 
-``
+```
     threatCalc(10);
     threatCalc(20);
     threatCalc(30)
