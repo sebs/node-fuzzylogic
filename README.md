@@ -42,7 +42,7 @@ npm install fuzzylogic
 ## Threat Example
 
 A Basic Function to create fuzzy decisions to
-```
+``
     var threatCalc = function(threat) {
         var probabNoAttack          = fuzzylogic.triangle(threat, 0, 20, 40); 
         var probabNormalAttack      = fuzzylogic.trapezoid(threat, 20, 30, 90, 100); 
@@ -54,7 +54,7 @@ A Basic Function to create fuzzy decisions to
     };
 ```
 And then execute the code 
-``
+```
     threatCalc(10);
     threatCalc(20);
     threatCalc(30)
