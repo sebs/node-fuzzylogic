@@ -20,42 +20,44 @@ from http://en.wikipedia.org/wiki/Fuzzy_logic
 npm install fuzzylogic
 ``
 
-## Basic Fuzzyfication
-```
-    var resGrade = fuzzylogic.grade(3,0,1);
-    assert.ok(resGrade == 1);
+## Basic Fuzzyfication`
 
-    var resReverseGrade = fuzzylogic.reverseGrade(3,0,1);
-    assert.ok(resReverseGrade === 0);
+```javascript
+var resGrade = fuzzylogic.grade(3,0,1);
+assert.ok(resGrade == 1);
 
-    var resTriangle = fuzzylogic.triangle(3,0,1,2);
-    assert.ok(resTriangle === 0);
+var resReverseGrade = fuzzylogic.reverseGrade(3,0,1);
+assert.ok(resReverseGrade === 0);
+
+var resTriangle = fuzzylogic.triangle(3,0,1,2);
+assert.ok(resTriangle === 0);
 ```
 ## Fuzzy Rulesets for Defuzzyfication
-```
-    assert.ok(rules.and(0.1, 0.2, cbA, cbB) == 0.1);
-    assert.ok(cbValue == 'a');
-    assert.ok(rules.or(0.1, 0.2, cbA, cbB)== 0.2);
-    assert.ok(cbValue == 'b');
-    assert.ok(rules.not(0.1) == 0.9);
+```javascript
+assert.ok(rules.and(0.1, 0.2, cbA, cbB) == 0.1);
+assert.ok(cbValue == 'a');
+assert.ok(rules.or(0.1, 0.2, cbA, cbB)== 0.2);
+assert.ok(cbValue == 'b');
+assert.ok(rules.not(0.1) == 0.9);
 ```
 ## Threat Example
 
 A Basic Function to create fuzzy decisions to
-``
-    var threatCalc = function(threat) {
-        var probabNoAttack          = fuzzylogic.triangle(threat, 0, 20, 40); 
-        var probabNormalAttack      = fuzzylogic.trapezoid(threat, 20, 30, 90, 100); 
-        var probabEnragedAttack     = fuzzylogic.grade(threat, 90, 100);
-        sys.log('Threat: ' + threat);
-        sys.log('no attack: '       + probabNoAttack);
-        sys.log('normal attack: '   + probabNormalAttack);
-        sys.log('enraged attack: '  + probabEnragedAttack);    
-    };
+```javascript
+var threatCalc = function(threat) {
+    var probabNoAttack          = fuzzylogic.triangle(threat, 0, 20, 40);
+    var probabNormalAttack      = fuzzylogic.trapezoid(threat, 20, 30, 90, 100);
+    var probabEnragedAttack     = fuzzylogic.grade(threat, 90, 100);
+    sys.log('Threat: ' + threat);
+    sys.log('no attack: '       + probabNoAttack);
+    sys.log('normal attack: '   + probabNormalAttack);
+    sys.log('enraged attack: '  + probabEnragedAttack);
+};
 ```
-And then execute the code 
-```
-    threatCalc(10);
-    threatCalc(20);
-    threatCalc(30)
+And then execute the code
+
+```javascript
+threatCalc(10);
+threatCalc(20);
+threatCalc(30);
 ```
