@@ -13,4 +13,8 @@ describe('Logic', function(){
     var resTriangle = fuzzylogic.triangle(3,0,1,2);
     assert.equal(resTriangle, 0);
   });
+  it('trapezoid', function(){
+    var resTrapezoid = fuzzylogic.trapezoid(3,0,1,2,3);
+    assert.equal(resTrapezoid, 0);
+  });
 });
