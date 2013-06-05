@@ -15,5 +15,8 @@
   "main": "lib",
   "devDependencies": {
     "mocha": "~1.10.0"
+  },
+  "scripts": {
+    "test": "make" 
   }
 }
