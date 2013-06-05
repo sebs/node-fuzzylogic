@@ -1,4 +1,4 @@
 test:
-	@find test/test-*.js | xargs -n 1 -t node
+	@./node_modules/mocha/bin/mocha
 
 .PHONY: test

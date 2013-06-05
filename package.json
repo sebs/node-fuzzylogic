@@ -1,10 +1,19 @@
 {
-  "name" : "fuzzylogic",
-  "version" : "0.0.6",
-  "author" : "Sebastian Schürmann <sebs@solution.io>",
-  "description" : "A fuzzy logic module for node.js",
-  "keywords" : ["fuzzylogic"],
-  "engines" : ["node"],
-  "directories" : { "lib" : "lib" },
-  "main" : "lib"
+  "name": "fuzzylogic",
+  "version": "0.0.6",
+  "author": "Sebastian Schürmann <sebs@solution.io>",
+  "description": "A fuzzy logic module for node.js",
+  "keywords": [
+    "fuzzylogic"
+  ],
+  "engines": [
+    "node"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "main": "lib",
+  "devDependencies": {
+    "mocha": "~1.10.0"
+  }
 }
