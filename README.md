@@ -5,6 +5,8 @@
 
 # Fuzzy Logic for node.js
 
+[![Build Status](https://travis-ci.org/sebs/node-fuzzylogic.png)](https://travis-ci.org/sebs/node-fuzzylogic)
+
 If yes or no is not enough
 
 Code by: Sebastian Schürmann 
