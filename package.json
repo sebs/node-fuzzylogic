@@ -17,6 +17,6 @@
     "mocha": "~1.10.0"
   },
   "scripts": {
-    "test": "make" 
+    "test": "./node_modules/mocha/bin/mocha" 
   }
 }
