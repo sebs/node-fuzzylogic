@@ -6,13 +6,17 @@
   "keywords": [
     "fuzzylogic"
   ],
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/sebs/node-fuzzylogic.git"
+  },
   "engines": [
     "node"
   ],
   "directories": {
     "lib": "lib"
   },
-  "main": "lib",
+  "main": "lib/fuzzylogic.js",
   "devDependencies": {
     "mocha": "~1.10.0"
   },
