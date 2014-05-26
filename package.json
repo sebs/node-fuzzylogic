@@ -14,7 +14,7 @@
   },
   "main": "lib",
   "devDependencies": {
-    "mocha": "~1.10.0"
+    "mocha": "1.19.0"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
