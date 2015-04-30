@@ -1,5 +1,5 @@
 var assert = require("assert");
-var rules = require("../lib/rules");
+var rules = require("../index").rules;
 describe('Rules', function () {
   it('should execute the right callback for and', function (done) {
     var res = rules.and(0.1, 0.2, function () {
