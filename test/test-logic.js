@@ -1,6 +1,14 @@
 var assert = require("assert");
 var fuzzylogic = require("../lib/fuzzylogic");
+
+
+
+
 describe('Logic', function(){
+  it('interface check', function() {
+    assert.equal(typeof fuzzylogic.grade, 'function');
+  });
+
   it('grade', function(){
     var resGrade = fuzzylogic.grade(3,0,1);
     assert.equal(resGrade, 1);
