@@ -15,9 +15,11 @@
   },
   "main": "lib",
   "devDependencies": {
+    "jsdoc": "^3.3.3",
     "mocha": "^2.3.3"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "docs": "./node_modules/.bin/jsdoc lib/*"
   }
 }
