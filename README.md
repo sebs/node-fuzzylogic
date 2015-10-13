@@ -1,7 +1,7 @@
 
-    _  _ ____ ___  ____    ____ _  _ ___  ___  _   _ _    ____ ____ _ ____ 
+    _  _ ____ ___  ____    ____ _  _ ___  ___  _   _ _    ____ ____ _ ____
     |\ | |  | |  \ |___ __ |___ |  |   /    /   \_/  |    |  | | __ | |    
-    | \| |__| |__/ |___    |    |__|  /__  /__   |   |___ |__| |__] | |___ 
+    | \| |__| |__/ |___    |    |__|  /__  /__   |   |___ |__| |__] | |___
 
 # Fuzzy Logic for node.js
 
@@ -9,17 +9,27 @@
 
 If yes or no is not enough
 
-Code by: Sebastian Schürmann 
+Code by: Sebastian Schürmann
 License: MIT
 
 Fuzzy logic is a form of many-valued logic; it deals with reasoning that is approximate rather than fixed and exact. In contrast with traditional logic theory, where binary sets have two-valued logic: true or false, fuzzy logic variables may have a truth value that ranges in degree between 0 and 1. Fuzzy logic has been extended to handle the concept of partial truth, where the truth value may range between completely true and completely false.[1] Furthermore, when linguistic variables are used, these degrees may be managed by specific functions.
 
 from http://en.wikipedia.org/wiki/Fuzzy_logic
 
-## Install
+## Install & Dev
 
 ```
 npm install fuzzylogic
+```
+
+Test
+```
+npm test
+```
+
+Api docs
+```
+npm test
 ```
 
 ## Basic Fuzzyfication`
@@ -63,5 +73,3 @@ threatCalc(10);
 threatCalc(20);
 threatCalc(30);
 ```
-
-
