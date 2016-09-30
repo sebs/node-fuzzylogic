@@ -7,7 +7,7 @@
 
 [![Build Status](https://travis-ci.org/sebs/node-fuzzylogic.png)](https://travis-ci.org/sebs/node-fuzzylogic)
 
-** I have created a new fuzzylogic module, it is a bit more modern, simlper to extend and just new and shiny. Have alook at [es6-fuz](https://github.com/sebs/es6-fuzz) **
+** I have created a new fuzzylogic module, it is a bit more modern, simpler to extend and just new and shiny. Have a look at [es6-fuz](https://github.com/sebs/es6-fuzz) **
 
 If yes or no is not enough
 
