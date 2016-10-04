@@ -18,8 +18,8 @@
   },
   "main": "lib/fuzzylogic.js",
   "devDependencies": {
-    "jsdoc": "^3.3.3",
-    "mocha": "^2.3.3"
+    "jsdoc": "^3.4.2",
+    "mocha": "^3.1.0"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
