@@ -11,6 +11,8 @@
 
 If yes or no is not enough
 
+[Glossary](./glossary.md)
+
 Code by: Sebastian Schürmann
 License: MIT
 
