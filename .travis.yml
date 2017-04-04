@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - "6"
+- '6'
 env:
-  - CXX=g++-4.8
+- CXX=g++-4.8
 addons:
   apt:
     sources:
@@ -11,3 +11,11 @@ addons:
     - g++-4.8
 notifications:
   email: false
+deploy:
+  provider: npm
+  email: sebs@2xs.org
+  api_key:
+    secure: EkMKKXPutlVBqKkiWafOfVBgbnxqV2uO8qXoOuSFF/5ymyEa06HtT57qdaSsiN3bYuzni3ehfztqFsGCggVe4Hot9OHF8FhOgcrL8hYAiCtOZCI/VTG4IperqBrbSPbwY+o9s8J2R6GZ8L1sVoNG+n1KI1NBec9kUcRYFuWioYk=
+  on:
+    tags: true
+    repo: sebs/node-fuzzylogic
